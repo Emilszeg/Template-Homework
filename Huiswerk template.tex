@@ -1,5 +1,6 @@
 \documentclass[a4paper]{article}
-\usepackage{a4wide}
+% \usepackage{a4wide}
+\usepackage{geometry}
 \title{Huiswerk Template}
 \author{Emils Zegers 14431971}
 \date{\today}
@@ -13,6 +14,10 @@
 \usepackage{hyperref}
 \usepackage{parskip}
 \usepackage{xurl}
+\geometry{
+  includeheadfoot,
+  margin=2.70cm
+}
 
 \newcommand{\verz}[2]{\left\{ #1 \mid #2 \right\}}
 \newcommand{\modverz}[1]{\ZZ/#1\ZZ}
@@ -33,11 +38,6 @@
 \newcommand{\image}{\text{Im}}
 \newcommand{\inprod}[2]{\langle #1, #2 \rangle}
 \newcommand{\orde}[1]{\text{orde}(#1)}
-\newcommand{\dif}[2]{\frac{d #1}{d #2}}
-\newcommand{\pdif}[2]{\frac{\partial #1}{\partial #2}}
-\let \oldqed \qed
-\renewcommand{\qed}{\hfill{\oldqed}}
-\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 
 %Stochastiek commands
 \newcommand{\bern}{\text{Bern}}
@@ -49,13 +49,14 @@
 \newcommand{\Var}{\text{Var}}
 \newcommand{\EE}{\mathbb{E}}
 \newcommand{\unif}{\text{Unif}}
-%test 3
+
 \setlength{\parskip}{4pt}
 
 \newenvironment{opdracht}[1]
 {
   \paragraph*{#1}
 }
+
 
 \begin{document}
 \maketitle
